@@ -37,7 +37,7 @@ npm start
 # Notes
 - API token is generate from DatabaseSeeder and copied to frontend .env for the conveniences of this setup. In real world API token would be generated seperately.
 - Every minute, arrival time will be deducted by 1 min to simulate real-time bus arrival timing. But in real life, the timing would not be that on point.
-- User location is presetted in `frontend/.env`. But bus stops are seeded within a small area so if user move out more than 25km(configured in backend/config/busstop.php), it will say no nearby bus stops.
+- User location is presetted in `frontend/.env`. But bus stops are seeded within a small area so if user move out more than 25km(configured in `backend/config/busstop.php`), it will say no nearby bus stops.
 
 # Screenshots
 ![Screenshot 2024-06-09 at 7 40 18 PM](https://github.com/allanling/incube8/assets/3927977/43474be7-be36-4c39-ae4d-7101a8803c24)
