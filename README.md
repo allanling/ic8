@@ -13,7 +13,7 @@ cd incube8/backend
 docker compose up -d --build
 ```
 
-3. Confirm that mysql is ready before moving to next step
+3. Confirm that mysql is ready using the following command before moving to next step
 ```
 docker compose exec db mysql -uincube8 -pincube8
 ```
