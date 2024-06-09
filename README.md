@@ -1,7 +1,7 @@
 # Setup
 1. Clone
 ```
-git clone https://github.com/allanling/incube8.git
+git clone git@github.com:allanling/incube8.git
 ```
 
 2. Build
