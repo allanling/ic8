@@ -1,0 +1,23 @@
+.bus-card {
+  width: 6rem;
+
+  .card-header {
+    font-size: larger;
+    font-weight: 800;
+  }
+  .bus-card-content-next {
+    font-size: 1.5rem;
+  }
+  .bus-card-content-later {
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes blinkout {
+  0% { opacity: .1; }
+  100% { opacity: 1; }
+}
+
+.blink-out {
+  animation: blinkout 0.4s;
+}
