@@ -20,7 +20,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "setup": "cp ../backend/storage/app/react.env .env; npm ci;",
+    "setup": "cp ../backend/storage/app/react.env .env.local; npm ci;",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
