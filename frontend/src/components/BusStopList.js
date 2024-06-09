@@ -3,7 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 import BusStopListItemHeader from "./BusStopListItemHeader";
 import BusStopListItem from "./BusStopListItem";
 
-const BusStopList = ({ busStopList }) => {
+const BusStopList = ({ busStopList, isLoading }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleSelect = (e) => {
@@ -25,7 +25,15 @@ const BusStopList = ({ busStopList }) => {
     </Accordion.Item>
   ));
 
-  if (listItems.length > 0) {
+  if (isLoading) {
+    return (
+      <>
+      <div className="placeholder-glow min-vh-25">
+        <span className="placeholder placeholder-lg col-12"></span>
+      </div>
+    </>
+    );
+  } else if (listItems.length > 0) {
     return (
       <>
         <Accordion defaultActiveKey="0" onSelect={handleSelect}>
@@ -37,9 +45,7 @@ const BusStopList = ({ busStopList }) => {
 
   return (
     <>
-      <div className="placeholder-glow min-vh-25">
-        <span className="placeholder placeholder-lg col-12"></span>
-      </div>
+      No bus stop found nearby!
     </>
   );
 };

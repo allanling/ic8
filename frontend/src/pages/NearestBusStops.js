@@ -51,7 +51,7 @@ const NearestBusStops = () => {
           <FontAwesomeIcon icon={faLocationCrosshairs} size="lg" />
         </button>
       </div>
-      <BusStopList busStopList={busStopList} />
+      <BusStopList busStopList={busStopList} isLoading={isLoading} />
     </>
   );
 };
